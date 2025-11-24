@@ -207,7 +207,7 @@ function saveScores() {
     console.log('score', scoreData)
 
       fetch(
-        `https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/experienceScores`,
+        `https://upgraded-happiness-9rvrr9w9ppj3v64-3000.app.github.dev/experienceScores`,
         {
           method: "POST",
           headers: {
@@ -228,7 +228,7 @@ function saveScores() {
 
   setTimeout(() => {
     window.location.href =
-      "https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/pages/auth";
+      "https://upgraded-happiness-9rvrr9w9ppj3v64-3000.app.github.dev/pages/auth";
   }, 10000)
 
 }
