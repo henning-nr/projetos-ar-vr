@@ -1,0 +1,674 @@
+{
+  "perguntas": [
+    {
+      "descricao": "Quem desenvolveu o primeiro algoritmo destinado a ser processado por uma maquina?",
+      "verdadeiro": "Ada Lovelace",
+      "falso_a": "Grace Hopper",
+      "falso_b": "George Boole",
+      "falso_c": "John von Neumann"
+    },
+    {
+      "descricao": "Quem criou a algebra booleana, essencial para a logica de programacao moderna?",
+      "verdadeiro": "George Boole",
+      "falso_a": "Alan Turing",
+      "falso_b": "Konrad Zuse",
+      "falso_c": "Ada Lovelace"
+    },
+    {
+      "descricao": "Quem supervisionou o desenvolvimento do ENIAC, o primeiro computador eletronico de uso geral?",
+      "verdadeiro": "John von Neumann",
+      "falso_a": "Linus Torvalds",
+      "falso_b": "Ken Thompson",
+      "falso_c": "Joseph Carl Robnett Licklider"
+    },
+    {
+      "descricao": "Quem identificou o primeiro bug registrado na historia da computacao",
+      "verdadeiro": "Grace Hopper",
+      "falso_a": "Ada Lovelace",
+      "falso_b": "George Boole",
+      "falso_c": "John McCarthy"
+    },
+    {
+      "descricao": "Quem desenvolveu o primeiro compilador de programacao?",
+      "verdadeiro": "Grace Hopper",
+      "falso_a": "Ada Lovelace",
+      "falso_b": "George Boole",
+      "falso_c": "John McCarthy"
+    },
+    {
+      "descricao": "Quem quebrou o codigo Enigma durante a Segunda Guerra Mundial?",
+      "verdadeiro": "Alan Turing",
+      "falso_a": "John von Neumann",
+      "falso_b": "Konrad Zuse",
+      "falso_c": "George Boole"
+    },
+    {
+      "descricao": "Quem e considerado o criador da ARPANET, precursora da internet?",
+      "verdadeiro": "Joseph Carl Robnett Licklider",
+      "falso_a": "Tim Berners-Lee",
+      "falso_b": "Ken Thompson",
+      "falso_c": "John McCarthy"
+    },
+    {
+      "descricao": "Quem desenvolveu o nucleo do sistema Linux e criou o Git?",
+      "verdadeiro": "Linus Torvalds",
+      "falso_a": "Ken Thompson",
+      "falso_b": "John McCarthy",
+      "falso_c": "Tim Berners-Lee"
+    },
+    {
+      "descricao": "O que significa WWW?",
+      "verdadeiro": "World Wide Web",
+      "falso_a": "Web Wide World",
+      "falso_b": "World Wireless Web",
+      "falso_c": "Wireless Wide Web"
+    },
+    {
+      "descricao": "Quantos bytes ha em um kilobyte (KB)?",
+      "verdadeiro": "1024 bytes",
+      "falso_a": "1048 bytes",
+      "falso_b": "2024 bytes",
+      "falso_c": "2048 bytes"
+    },
+    {
+      "descricao": "Quantos kilobytes (KB) ha em um megabyte (MB)?",
+      "verdadeiro": "1024 kilobytes",
+      "falso_a": "1048 kilobytes",
+      "falso_b": "2024 kilobytes",
+      "falso_c": "2048 kilobytes"
+    },
+    {
+      "descricao": "Quantos megabytes (MB) ha em um gigabyte (GB)?",
+      "verdadeiro": "1024 megabytes",
+      "falso_a": "2024 megabytes",
+      "falso_b": "1048 megabytes",
+      "falso_c": "2048 megabytes"
+    },
+    {
+      "descricao": "Quantos gigabytes (GB) ha em um terabyte (TB)?",
+      "verdadeiro": "1024 gigabytes",
+      "falso_a": "1000 gigabytes",
+      "falso_b": "512 gigabytes",
+      "falso_c": "2048 gigabytes"
+    },
+    {
+      "descricao": "O que significa a sigla IP em redes de computadores?",
+      "verdadeiro": "Internet Protocol",
+      "falso_a": "Information Protocol",
+      "falso_b": "Internal Process",
+      "falso_c": "Interconnection Protocol"
+    },
+    {
+      "descricao": "Qual protocolo e utilizado para envio de e-mails?",
+      "verdadeiro": "SMTP",
+      "falso_a": "HTTP",
+      "falso_b": "FTP",
+      "falso_c": "IMAP"
+    },
+    {
+      "descricao": "Qual a funcao do protocolo HTTPS?",
+      "verdadeiro": "Seguranca em navegacao web",
+      "falso_a": "Transmissao de arquivos",
+      "falso_b": "Controle de rede local",
+      "falso_c": "Envio de e-mails"
+    },
+    {
+      "descricao": "O que faz o protocolo FTP?",
+      "verdadeiro": "Transfere arquivos",
+      "falso_a": "Envia e-mails",
+      "falso_b": "Protege contra ataques",
+      "falso_c": "Monitora a rede"
+    },
+    {
+      "descricao": "Quem e considerado o pai da IA?",
+      "verdadeiro": "John McCarthy",
+      "falso_a": "Alan Turing",
+      "falso_b": "Elon Musk",
+      "falso_c": "Geoffrey Hinton"
+    },
+    {
+      "descricao": "O que significa a sigla IA?",
+      "verdadeiro": "Inteligencia Artificial",
+      "falso_a": "Interface Automatica",
+      "falso_b": "Informacao Automatizada",
+      "falso_c": "Inteligencia Avancada"
+    },
+    {
+      "descricao": "O que e aprendizado de maquina?",
+      "verdadeiro": "Subcampo da IA",
+      "falso_a": "Processo de programacao",
+      "falso_b": "Metodo de armazenamento",
+      "falso_c": "Modelo de rede"
+    },
+    {
+      "descricao": "Qual e o nome do teste que serve para avaliar a capacidade de comunicacao convincente e natural de uma maquina",
+      "verdadeiro": "Teste de Turing",
+      "falso_a": "Teste de McCarthy",
+      "falso_b": "Teste de Von Neumann",
+      "falso_c": "Teste de Boole"
+    },
+    {
+      "descricao": "O que e uma rede neural?",
+      "verdadeiro": "Modelo inspirado no cerebro",
+      "falso_a": "Protocolo de rede",
+      "falso_b": "Sistema operacional",
+      "falso_c": "Software de IA"
+    },
+    {
+      "descricao": "Qual tecnica usa grandes volumes de dados para IA?",
+      "verdadeiro": "Big Data",
+      "falso_a": "Cloud Computing",
+      "falso_b": "Internet of Things",
+      "falso_c": "Edge Computing"
+    },
+    {
+      "descricao": "Quais sao as 3 principais caracteristicas do Big Data?",
+      "verdadeiro": "Volume, Velocidade, Variedade",
+      "falso_a": "Veracidade, Valor, Visao",
+      "falso_b": "Velocidade, Virtualizacao, Variacao",
+      "falso_c": "Volume, Valor, Validacao"
+    },
+    {
+      "descricao": "O que o Big Data permite fazer?",
+      "verdadeiro": "Analisar grandes volumes de dados",
+      "falso_a": "Armazenar dados localmente",
+      "falso_b": "Proteger contra virus",
+      "falso_c": "Criar websites"
+    },
+    {
+      "descricao": "Qual linguagem e comumente usada em Big Data?",
+      "verdadeiro": "Python",
+      "falso_a": "Java",
+      "falso_b": "C++",
+      "falso_c": "C#"
+    },
+    {
+      "descricao": "O que e Hadoop?",
+      "verdadeiro": "Plataforma de processamento de dados",
+      "falso_a": "Sistema de armazenamento local",
+      "falso_b": "Banco de dados relacional",
+      "falso_c": "Linguagem de programacao"
+    },
+    {
+      "descricao": "O que significa NoSQL?",
+      "verdadeiro": "Banco de dados nao relacional",
+      "falso_a": "Protocolo de seguranca",
+      "falso_b": "Servidor de internet",
+      "falso_c": "Software de IA"
+    },
+    {
+      "descricao": "O que significa a sigla SQL?",
+      "verdadeiro": "Structured Query Language",
+      "falso_a": "Simple Query Language",
+      "falso_b": "Structured Quick Language",
+      "falso_c": "System Query Language"
+    },
+    {
+      "descricao": "O que faz a instrucao SELECT em SQL?",
+      "verdadeiro": "Consulta dados",
+      "falso_a": "Deleta dados",
+      "falso_b": "Cria uma tabela",
+      "falso_c": "Atualiza dados"
+    },
+    {
+      "descricao": "Qual comando SQL cria uma nova tabela?",
+      "verdadeiro": "CREATE TABLE",
+      "falso_a": "GENERATE TABLE",
+      "falso_b": "ADD TABLE",
+      "falso_c": "NEW TABLE"
+    },
+    {
+      "descricao": "qual das alternativas e um tipo de banco de dados relacional.",
+      "verdadeiro": "MySQL",
+      "falso_a": "MongoDB",
+      "falso_b": "Redis",
+      "falso_c": "Apache Cassandra"
+    },
+    {
+      "descricao": "Qual comando apaga uma tabela no SQL?",
+      "verdadeiro": "DROP TABLE",
+      "falso_a": "DELETE TABLE",
+      "falso_b": "DELETE TABLE FROM DB",
+      "falso_c": "REMOVE TABLE"
+    },
+    {
+      "descricao": "O que faz o FULL JOIN?",
+      "verdadeiro": "Combina todas as linhas de ambas as tabelas",
+      "falso_a": "Combina apenas linhas sem correspondencia",
+      "falso_b": "Combina apenas as linhas correspondentes",
+      "falso_c": "Combina as colunas, nao as linhas"
+    },
+    {
+      "descricao": "Qual JOIN retorna todas as combinacoes possiveis de linhas?",
+      "verdadeiro": "CROSS JOIN",
+      "falso_a": "INNER JOIN",
+      "falso_b": "LEFT JOIN",
+      "falso_c": "RIGHT JOIN"
+    },
+    {
+      "descricao": "Qual JOIN insere NULL onde nao ha correspondencia?",
+      "verdadeiro": "LEFT JOIN",
+      "falso_a": "INNER JOIN",
+      "falso_b": "FULL JOIN",
+      "falso_c": "CROSS JOIN"
+    },
+    {
+      "descricao": "Qual JOIN inclui registros de ambas as tabelas, mesmo sem correspondencia?",
+      "verdadeiro": "FULL JOIN",
+      "falso_a": "INNER JOIN",
+      "falso_b": "LEFT JOIN",
+      "falso_c": "RIGHT JOIN"
+    },
+    {
+      "descricao": "O que faz o INNER JOIN?",
+      "verdadeiro": "Combina registros com correspondencia",
+      "falso_a": "Combina todos os registros",
+      "falso_b": "Combina registros sem correspondencia",
+      "falso_c": "Combina apenas registros da tabela A"
+    },
+    {
+      "descricao": "Qual linguagem que, com HTML e CSS, e uma das tres principais tecnologias da World Wide Web",
+      "verdadeiro": "JavaScript",
+      "falso_a": "Python",
+      "falso_b": "Java",
+      "falso_c": "Ruby"
+    },
+    {
+      "descricao": "Qual linguagem e popular para analise de dados?",
+      "verdadeiro": "Python",
+      "falso_a": "JavaScript",
+      "falso_b": "SQL",
+      "falso_c": "Java"
+    },
+    {
+      "descricao": "Qual linguagem e amplamente usada para bancos de dados?",
+      "verdadeiro": "SQL",
+      "falso_a": "MySQL",
+      "falso_b": "Python",
+      "falso_c": "HTML"
+    },
+    {
+      "descricao": "Qual linguagem e frequentemente usada para desenvolvimento de IA?",
+      "verdadeiro": "Python",
+      "falso_a": "Java",
+      "falso_b": "JavaScript",
+      "falso_c": "OpenIA"
+    },
+    {
+      "descricao": "Qual biblioteca Python e popular para manipulacao de dados?",
+      "verdadeiro": "Pandas",
+      "falso_a": "NumPy",
+      "falso_b": "OpenCV",
+      "falso_c": "Matplotlib"
+    },
+    {
+      "descricao": "Qual tecnica e usada para resumir dados em grupos semelhantes?",
+      "verdadeiro": "Clusterizacao",
+      "falso_a": "Regressao",
+      "falso_b": "Classificacao",
+      "falso_c": "Reducao de dimensionalidade"
+    },
+    {
+      "descricao": "O que significa a sigla HTML?",
+      "verdadeiro": "HyperText Markup Language",
+      "falso_a": "HyperText Media Language",
+      "falso_b": "Hyperlink Markup Language",
+      "falso_c": "Hyperlink Text Media"
+    },
+    {
+      "descricao": "Qual tag HTML e usada para criar uma tabela?",
+      "verdadeiro": "<table>",
+      "falso_a": "<tb>",
+      "falso_b": "<tr>",
+      "falso_c": "<ul>"
+    },
+    {
+      "descricao": "Qual atributo da tag <a> define o destino do link?",
+      "verdadeiro": "href",
+      "falso_a": "src",
+      "falso_b": "link",
+      "falso_c": "alt"
+    },
+    {
+      "descricao": "O que faz a tag <div> em HTML?",
+      "verdadeiro": "Agrupa elementos",
+      "falso_a": "Formata texto",
+      "falso_b": "Adiciona links",
+      "falso_c": "Adiciona imagens"
+    },
+    {
+      "descricao": "Qual tag HTML e usada para criar um titulo?",
+      "verdadeiro": "<h1>",
+      "falso_a": "<p>",
+      "falso_b": "<title>",
+      "falso_c": "<text-title>"
+    },
+    {
+      "descricao": "Qual tag HTML cria um paragrafo?",
+      "verdadeiro": "<p>",
+      "falso_a": "<h1>",
+      "falso_b": "<div>",
+      "falso_c": "<span>"
+    },
+    {
+      "descricao": "Qual atributo da tag <img> define o endereco da imagem?",
+      "verdadeiro": "src",
+      "falso_a": "href",
+      "falso_b": "alt",
+      "falso_c": "link"
+    },
+    {
+      "descricao": "Qual tag HTML e usada para criar uma lista nao ordenada?",
+      "verdadeiro": "<ul>",
+      "falso_a": "<ol>",
+      "falso_b": "<li>",
+      "falso_c": "<dl>"
+    },
+    {
+      "descricao": "Qual tag HTML e usada para imagens?",
+      "verdadeiro": "<img>",
+      "falso_a": "<a>",
+      "falso_b": "<div>",
+      "falso_c": "<span>"
+    },
+    {
+      "descricao": "Qual e a funcao da tag <a> em HTML?",
+      "verdadeiro": "Criar links",
+      "falso_a": "Pular Linha",
+      "falso_b": "Criar paragrafos",
+      "falso_c": "Formatar texto"
+    },
+    {
+      "descricao": "O que e uma classe em POO?",
+      "verdadeiro": "Molde para criar objetos",
+      "falso_a": "Funcao de calculo",
+      "falso_b": "Conjunto de variaveis",
+      "falso_c": "Banco de dados"
+    },
+    {
+      "descricao": "O que e um objeto em POO?",
+      "verdadeiro": "Instancia de uma classe",
+      "falso_a": "Funcao de uma classe",
+      "falso_b": "Atributo de uma classe",
+      "falso_c": "Metodo de uma funcao"
+    },
+    {
+      "descricao": "Qual e o principio de encapsulamento?",
+      "verdadeiro": "Proteger dados internos",
+      "falso_a": "Criar multiplos objetos",
+      "falso_b": "Heranca entre classes",
+      "falso_c": "Reutilizar codigo"
+    },
+    {
+      "descricao": "O que e heranca em POO?",
+      "verdadeiro": "Uma classe herda de outra",
+      "falso_a": "Repeticao de codigo",
+      "falso_b": "Uma funcao chama outra",
+      "falso_c": "Criacao de novas variaveis"
+    },
+    {
+      "descricao": "O que e polimorfismo em POO?",
+      "verdadeiro": "Mesma interface, diferentes implementacoes",
+      "falso_a": "Repetir codigo",
+      "falso_b": "Heranca multipla",
+      "falso_c": "Encapsular dados"
+    },
+    {
+      "descricao": "O que sao metodos em POO?",
+      "verdadeiro": "Funcoes de um objeto",
+      "falso_a": "Variaveis globais",
+      "falso_b": "Classes herdadas",
+      "falso_c": "Atributos fixos"
+    },
+    {
+      "descricao": "O que sao atributos em POO?",
+      "verdadeiro": "Propriedades de um objeto",
+      "falso_a": "Funcoes internas",
+      "falso_b": "Classes abstratas",
+      "falso_c": "Bibliotecas externas"
+    },
+    {
+      "descricao": "O que e abstracao em POO?",
+      "verdadeiro": "Ocultar detalhes complexos",
+      "falso_a": "Copiar codigo",
+      "falso_b": "Aumentar a complexidade",
+      "falso_c": "Excluir metodos"
+    },
+    {
+      "descricao": "O que e um construtor em POO?",
+      "verdadeiro": "Metodo para inicializar objetos",
+      "falso_a": "Funcao que exclui objetos",
+      "falso_b": "Atributo de uma funcao",
+      "falso_c": "Classe abstrata"
+    },
+    {
+      "descricao": "O que significa a sigla RA?",
+      "verdadeiro": "Realidade Aumentada",
+      "falso_a": "Realidade Avancada",
+      "falso_b": "Realidade Artificial",
+      "falso_c": "Realidade Automatizada"
+    },
+    {
+      "descricao": "O que significa a sigla RV?",
+      "verdadeiro": "Realidade Virtual",
+      "falso_a": "Realidade Visual",
+      "falso_b": "Realidade Visualizada",
+      "falso_c": "Realidade Verificada"
+    },
+    {
+      "descricao": "Qual tecnologia usa dispositivos como oculos e fones para imersao total?",
+      "verdadeiro": "Realidade Virtual",
+      "falso_a": "Realidade Aumentada",
+      "falso_b": "Computacao em nuvem",
+      "falso_c": "Inteligencia Artificial"
+    },
+    {
+      "descricao": "Qual dispositivo e mais comum em Realidade Aumentada?",
+      "verdadeiro": "Smartphone",
+      "falso_a": "Headset VR",
+      "falso_b": "Projetor",
+      "falso_c": "Fone de ouvido"
+    },
+    {
+      "descricao": "Qual tecnologia e usada para misturar o mundo real com elementos digitais?",
+      "verdadeiro": "Realidade Aumentada",
+      "falso_a": "Realidade Virtual",
+      "falso_b": "Hologramas",
+      "falso_c": "Video 3D"
+    },
+    {
+      "descricao": "Qual tecnologia e usada para jogos imersivos que simulam mundos digitais?",
+      "verdadeiro": "Realidade Virtual",
+      "falso_a": "Realidade Aumentada",
+      "falso_b": "Realidade Estendida",
+      "falso_c": "Computacao Grafica"
+    },
+    {
+      "descricao": "Qual exemplo popular usa RA para sobrepor elementos digitais ao mundo real?",
+      "verdadeiro": "Pokemon Go",
+      "falso_a": "Oculus Rift",
+      "falso_b": "Google Cardboard",
+      "falso_c": "Minecraft VR"
+    },
+    {
+      "descricao": "O que e um vetor em programacao?",
+      "verdadeiro": "Estrutura unidim.",
+      "falso_a": "Estrutura bidim.",
+      "falso_b": "Estrutura 3D",
+      "falso_c": "Variavel simples"
+    },
+    {
+      "descricao": "Qual a diferenca entre vetor e matriz?",
+      "verdadeiro": "Vetor e 1D, matriz 2D",
+      "falso_a": "Vetor sao apenas indicadores de uma matriz",
+      "falso_b": "Matriz tem 1 linha",
+      "falso_c": "Sao sinonimos"
+    },
+    {
+      "descricao": "O numero decimal 2 se convertido em binario e igual a...",
+      "verdadeiro": "10",
+      "falso_a": "11",
+      "falso_b": "01",
+      "falso_c": "2"
+    },
+    {
+      "descricao": "O numero binario 011 se convertido em decimal e igual a...",
+      "verdadeiro": "3",
+      "falso_a": "2",
+      "falso_b": "11",
+      "falso_c": "4"
+    }
+  ],
+  "scores": [
+    {
+      "nome": "C11C23",
+      "pontuacao": 3,
+      "id": 1
+    },
+    {
+      "nome": "AAAAAA",
+      "pontuacao": 15,
+      "id": 2
+    },
+    {
+      "nome": "AACAAA",
+      "pontuacao": 3,
+      "id": 3
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 0,
+      "id": 4
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 6,
+      "id": 5
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 2,
+      "id": 6
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 7
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 8
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 2,
+      "id": 9
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 2,
+      "id": 10
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 2,
+      "id": 11
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 12
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 6,
+      "id": 13
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 14
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 0,
+      "id": 15
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 0,
+      "id": 16
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 0,
+      "id": 17
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 18
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 19
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 6,
+      "id": 20
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 8,
+      "id": 21
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 2,
+      "id": 22
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 23
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 24
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 25
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 1,
+      "id": 26
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 0,
+      "id": 27
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 9,
+      "id": 28
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 5,
+      "id": 29
+    },
+    {
+      "nome": "AAAA",
+      "pontuacao": 5,
+      "id": 30
+    }
+  ]
+}

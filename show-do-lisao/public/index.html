@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q&A</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <!--     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector/dist/aframe-inspector.min.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Adicionado onload para carregar a pergunta -->
+    <a-scene>
+      <!-- Adiciona o sky para a imagem 360º -->
+      <a-sky
+        src="https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/images%2Fbackground-default.jpg?v=1728144353737"
+        rotation="0 162 0"
+      ></a-sky>
+
+      <!-- Adiciona a câmera com o cursor VR -->
+      <a-camera fov="80">
+        <a-entity
+          cursor="fuse: true; fuseTimeout: 1000"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: orange; shader: flat"
+          position="0 0 -1"
+          raycaster="objects: .clickable"
+        ></a-entity>
+      </a-camera>
+
+      <!-- adicionar nome -->
+      <a-plane
+        position="0 6 -10"
+        width="4"
+        height="1"
+        color="#f850fe"
+        id="plane-container"
+      >
+        <!-- Primeira Letra -->
+        <a-plane
+          position="-1.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#2c1996"
+          id="plane-first-letter"
+        >
+          <a-text
+            font="monoid"
+            value="A"
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-first-letter"
+          >
+            <!-- Retrocede a letra (z-a) -->
+            <a-triangle
+              id="triangle-top-first-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 180"
+              position="0 -1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-top-first-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+
+            <!-- Avança a letra (a-z) -->
+            <a-triangle
+              id="triangle-bottom-first-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 0"
+              position="0 1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-bottom-first-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+          </a-text>
+        </a-plane>
+
+        <!-- Segunda Letra -->
+        <a-plane
+          position="-0.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#2c1996"
+          id="plane-second-letter"
+        >
+          <a-text
+            font="monoid"
+            value="A"
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-second-letter"
+          >
+            <!-- Retrocede a letra (z-a) -->
+            <a-triangle
+              id="triangle-top-second-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 180"
+              position="0 -1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-top-second-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+
+            <!-- Avança a letra (a-z) -->
+            <a-triangle
+              id="triangle-bottom-second-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 0"
+              position="0 1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-bottom-second-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+          </a-text>
+        </a-plane>
+
+        <!-- Terceira Letra -->
+        <a-plane
+          position="0.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#2c1996"
+          id="plane-third-letter"
+        >
+          <a-text
+            font="monoid"
+            value="A"
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-third-letter"
+          >
+            <!-- Retrocede a letra (z-a) -->
+            <a-triangle
+              id="triangle-top-third-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 180"
+              position="0 -1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-top-third-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+
+            <!-- Avança a letra (a-z) -->
+            <a-triangle
+              id="triangle-bottom-third-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 0"
+              position="0 1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-bottom-third-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+          </a-text>
+        </a-plane>
+
+        <!-- Quarta Letra -->
+        <a-plane
+          position="1.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#2c1996"
+          id="plane-fourth-letter"
+        >
+          <a-text
+            font="monoid"
+            value="A"
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-fourth-letter"
+          >
+            <!-- Retrocede a letra (z-a) -->
+            <a-triangle
+              id="triangle-top-fourth-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 180"
+              position="0 -1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-top-fourth-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle>
+            </a-triangle>
+
+            <!-- Avança a letra (a-z) -->
+            <a-triangle
+              id="triangle-bottom-fourth-letter"
+              class="clickable"
+              geometry="primitive: triangle"
+              material="color: #7b7b7b"
+              vertex-a="1 -1 0"
+              vertex-b="0 0.5 0"
+              vertex-c="-1 -1 0"
+              rotation="0 0 0"
+              position="0 1 0"
+              scale="0.4 0.4 0.4"
+            >
+              <a-triangle
+                id="fundo-triangle-bottom-fourth-letter"
+                geometry="primitive: triangle"
+                material="color: #FFFFFF"
+                vertex-a="1 -1 0"
+                vertex-b="0 0.5 0"
+                vertex-c="-1 -1 0"
+                rotation="0 0 0"
+                position="0 -0.15 0.01"
+                scale="0.7 0.7 0.7"
+              >
+              </a-triangle> </a-triangle
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <a-plane
+        position="0 6 -10"
+        width="2"
+        height="1"
+        color="#000000"
+        id="plane-contador"
+        visible="false"
+      >
+        <!-- Dezena Segundos -->
+        <a-plane
+          position="-0.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#ffffff"
+          id="plane-dezena-second"
+        >
+          <a-text
+            font="monoid"
+            value=""
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-dezena-second"
+            color="#000000"
+          >
+          </a-text>
+        </a-plane>
+
+        <!-- Unidade Segundos -->
+        <a-plane
+          position="0.5 0 0.01"
+          width="0.8"
+          height="0.8"
+          color="#ffffff"
+          id="plane-unidade-second"
+        >
+          <a-text
+            font="monoid"
+            value=""
+            align="center"
+            width="10"
+            position="0 -0.1 0.2"
+            id="text-unidade-second"
+            color="#000000"
+          >
+          </a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Adiciona a pergunta e alternativas -->
+      <a-plane
+        position="0 1.6 -10"
+        width="10"
+        height="6"
+        color="#f850fe"
+        id="pergunta-borda"
+      >
+        <a-plane
+          position="0 0 0.1"
+          width="9.5"
+          height="5.5"
+          color="#2c1996"
+          id="pergunta-fundo"
+        >
+          <a-text
+            font="monoid"
+            value=""
+            align="center"
+            width="9"
+            height="5"
+            position="0 0 0.5"
+            id="pergunta-texto"
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Alternativa 1 -->
+      <a-plane
+        id="alternativa-1-fundo"
+        class="clickable"
+        position="5 3.2 -1.99"
+        width="6.8"
+        height="0.8"
+        color="#2c1996"
+        rotation="0 -70 0"
+        onclick="selectAlternative(1)"
+      >
+        <a-plane
+          id="alternativa-1-borda"
+          position="0 0 -0.01"
+          width="7"
+          height="1"
+          color="#f850fe"
+          rotation="0 0 0"
+        >
+          <a-text
+            font="monoid"
+            value="1"
+            width="12"
+            position="-3.3 0 0.01"
+            rotation="0 0 0"
+            id="alternativa-1-numero"
+          ></a-text>
+          <a-text
+            id="alternativa-1-texto"
+            font="monoid"
+            value=""
+            width="6"
+            position="-2.8 0 0.01"
+            rotation="0 0 0"
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Alternativa 2 -->
+      <a-plane
+        id="alternativa-2-fundo"
+        class="clickable"
+        position="5 2 -1.99"
+        width="6.8"
+        height="0.8"
+        color="#2c1996"
+        rotation="0 -70 0"
+        onclick="selectAlternative(2)"
+      >
+        <a-plane
+          id="alternativa-2-borda"
+          position="0 0 -0.01"
+          width="7"
+          height="1"
+          color="#f850fe"
+          rotation="0 0 0"
+        >
+          <a-text
+            font="monoid"
+            value="2"
+            width="12"
+            position="-3.3 0 0.01"
+            rotation="0 0 0"
+            id="alternativa-2-numero"
+          ></a-text>
+          <a-text
+            id="alternativa-2-texto"
+            font="monoid"
+            value=""
+            width="6"
+            position="-2.8 0 0.01"
+            rotation="0 0 0"
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Alternativa 3 -->
+      <a-plane
+        id="alternativa-3-fundo"
+        class="clickable"
+        position="5 0.8 -1.99"
+        width="6.8"
+        height="0.8"
+        color="#2c1996"
+        rotation="0 -70 0"
+        onclick="selectAlternative(3)"
+      >
+        <a-plane
+          id="alternativa-3-borda"
+          position="0 0 -0.01"
+          width="7"
+          height="1"
+          color="#f850fe"
+          rotation="0 0 0"
+        >
+          <a-text
+            font="monoid"
+            value="3"
+            width="12"
+            position="-3.3 0 0.01"
+            rotation="0 0 0"
+            id="alternativa-3-numero"
+          ></a-text>
+          <a-text
+            id="alternativa-3-texto"
+            font="monoid"
+            value=""
+            width="6"
+            position="-2.8 0 0.01"
+            rotation="0 0 0"
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Alternativa 4 -->
+      <a-plane
+        id="alternativa-4-fundo"
+        class="clickable"
+        position="5 -0.4 -1.99"
+        width="6.8"
+        height="0.8"
+        color="#2c1996"
+        rotation="0 -70 0"
+        onclick="selectAlternative(4)"
+      >
+        <a-plane
+          id="alternativa-4-borda"
+          position="0 0 -0.01"
+          width="7"
+          height="1"
+          color="#f850fe"
+          rotation="0 0 0"
+        >
+          <a-text
+            font="monoid"
+            value="4"
+            width="12"
+            position="-3.3 0 0.01"
+            rotation="0 0 0"
+            id="alternativa-4-numero"
+          ></a-text>
+          <a-text
+            id="alternativa-4-texto"
+            font="monoid"
+            value=""
+            width="6"
+            position="-2.8 0 0.01"
+            rotation="0 0 0"
+          ></a-text>
+        </a-plane>
+      </a-plane>
+
+      <!-- Botão Confirmar -->
+      <a-box
+        id="base-botao-confirmar"
+        position="0.14 -4 -5"
+        color="#3127f6"
+        depth="1.5"
+        height="4"
+        width="4"
+      >
+        <a-box
+          id="botao-confirmar"
+          class="clickable"
+          position="0 0.5 0"
+          color="#04a804"
+          depth="1"
+          height="3.5"
+          width="3.5"
+          onclick="confirmSelection()"
+          onmouseenter="changeColorOnHover()"
+          onmouseleave="resetColorOnLeave()"
+        >
+          <a-text
+            id="texto-botao-confirmar"
+            font="monoid"
+            value="CONFIRMAR"
+            width="10"
+            position="0 1.8 0"
+            rotation="-90 0 0"
+            align="center"
+          ></a-text>
+        </a-box>
+        <a-box
+          id="pontuacao"
+          position="0 0.2 0.4"
+          color="#FFFFFF"
+          depth="1"
+          height="3"
+          width="3.5"
+        >
+          <a-text
+            id="texto-pontuacao"
+            font="monoid"
+            value="PONTUACAO"
+            color="#000000"
+            width="6"
+            position="0 1.7 1"
+            rotation="0 0 0"
+            align="center"
+          ></a-text>
+          <a-text
+            id="valor-pontuacao"
+            font="monoid"
+            value="0"
+            color="#000000"
+            width="40"
+            position="0.1 0.5 1"
+            rotation="0 0 0"
+            align="center"
+          ></a-text>
+        </a-box>
+        <a-box
+          id="centro-mesa-lateral"
+          position="0 0.05 0.3"
+          color="#8d81f9"
+          depth="1"
+          height="3.8"
+          width="3.8"
+        ></a-box>
+        <a-box
+          id="centro-mesa-superior"
+          position="0 0.2 0"
+          color="#8d81f9"
+          depth="1.4"
+          height="3.8"
+          width="3.8"
+        ></a-box>
+        <a-box
+          id="base-botao"
+          position="0 0.35 0"
+          color="#454545"
+          depth="1.2"
+          height="3.6"
+          width="3.6"
+        ></a-box>
+      </a-box>
+    </a-scene>
+
+    <script>
+      // Versão sem jQuery, usando DOMContentLoaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Pega o código da URL atual
+        let userCode = window.location;
+        userCode = userCode.search.replace("?", "");
+        console.log(userCode);
+
+        // Salva no localStorage
+        if (userCode) {
+          localStorage.setItem("userCode", userCode);
+          console.log("Código do usuário salvo:", userCode);
+        }
+      });
+
+      let selectedAlternative = null;
+      let currentQuestionIndex = 0;
+      let shuffledQuestions = [];
+      let isFirstQuestion = true;
+      let score = 0;
+      let nick = "";
+      let countdown; // Variável para armazenar o intervalo do cronômetro
+      let timeLeft = 30; // Define o tempo inicial do contador (30 segundos)
+      let maxQuestions = 10;  //quantidade perguntas
+      
+      const skyElement = document.querySelector("a-sky");
+      const originalSrc = skyElement.getAttribute("src");
+
+      document
+        .querySelector("#plane-container")
+        .setAttribute("visible", "false");
+      
+      const letters = ["first", "second", "third", "fourth"];
+
+      // Adiciona a pergunta fixa do Nick no início
+      const nickQuestion = {
+        descricao: "Clique em CONFIRMAR para iniciar",
+        verdadeiro: "",
+        falso_a: "",
+        falso_b: "",
+        falso_c: "",
+      };
+
+      // SALVAR PONTOS
+      function saveScores(pontos) {
+        // tempo
+        // hits
+        // errors
+        console.log("pontos", pontos);
+
+        let user = localStorage.getItem("userCode");
+
+        fetch(
+          `https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/users?code=${user}`
+        )
+          .then(async (res) => {
+            return await res.json();
+          })
+          .then((user) => {
+            console.log("user", user);
+
+            let scoreData = {
+              userId: user[0].id,
+              experienceId: 3,
+              score: pontos,
+            };
+
+            console.log("score", scoreData);
+
+            fetch(
+              `https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/experienceScores`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(scoreData),
+              }
+            )
+              .then((res) => res.json())
+              .then((data) => {
+                console.log("Dados enviados com sucesso:", data);
+              })
+              .catch((error) => {
+                console.error("Erro ao salvar os dados:", error);
+              });
+          });
+
+        setTimeout(() => {
+          window.location.href =
+            "https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/pages/auth";
+        }, 10000);
+      }
+
+      function startCountdown() {
+        document
+          .querySelector(`#text-dezena-second`)
+          .setAttribute("value", "3");
+        document
+          .querySelector(`#text-unidade-second`)
+          .setAttribute("value", "0");
+        countdown = setInterval(() => {
+          console.log(timeLeft); // Imprime o tempo restante no console
+          timeLeft--; // Decrementa o contador
+
+          // Calcula as dezenas e unidades de timeLeft
+          const dezenas = Math.floor(timeLeft / 10); // Extrai a dezena
+          const unidades = timeLeft % 10; // Extrai a unidade
+
+          // Atualiza os valores dos elementos com dezenas e unidades
+          document
+            .querySelector(`#text-dezena-second`)
+            .setAttribute("value", dezenas);
+          document
+            .querySelector(`#text-unidade-second`)
+            .setAttribute("value", unidades);
+
+          if (timeLeft <= 0) {
+            clearInterval(countdown); // Para o intervalo quando chegar a 0
+            console.log("Tempo esgotado!"); // Mensagem de fim de contagem
+            skyElement.setAttribute(
+              "src",
+              "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/background-fail.png?v=1728163830018"
+            );
+            document
+              .querySelector(`#pergunta-fundo`)
+              .setAttribute("color", "#760d0d");
+            document
+              .querySelector(`#pergunta-borda`)
+              .setAttribute("color", "#d64242");
+            document
+              .querySelector(`#pergunta-texto`)
+              .setAttribute("value", "Tempo Esgotado! :(");
+
+            setTimeout(() => {
+              skyElement.setAttribute(
+                "src",
+                "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/images%2Fbackground-default.jpg?v=1728144353737"
+              );
+              document
+                .querySelector(`#pergunta-borda`)
+                .setAttribute("color", "#f850fe");
+              document
+                .querySelector(`#pergunta-fundo`)
+                .setAttribute("color", "#2c1996");
+              for (let i = 1; i <= 4; i++) {
+                document
+                  .querySelector(`#alternativa-${i}-borda`)
+                  .setAttribute("color", "#f850fe");
+                document
+                  .querySelector(`#alternativa-${i}-fundo`)
+                  .setAttribute("color", "#2c1996");
+              }
+              nextQuestion();
+            }, 3000); // Restaura a cor após 1 segundo
+          }
+        }, 1000); // A cada 1000ms (1 segundo)
+      }
+
+      // Função para carregar e embaralhar as perguntas da API
+      function loadQuestions() {
+        fetch("https://show-do-lisao.glitch.me/perguntas")
+          .then((response) => response.json())
+          .then((data) => {
+            shuffledQuestions = shuffleArray(data);
+
+            shuffledQuestions.unshift(nickQuestion); // Adiciona no início da lista
+
+            currentQuestionIndex = 0; // Reinicia o índice para garantir que comece na primeira pergunta
+            loadQuestion(shuffledQuestions[currentQuestionIndex]); // Carrega a primeira pergunta
+          })
+          .catch((error) =>
+            console.error("Erro ao carregar as perguntas:", error)
+          );
+      }
+
+      // Função para exibir uma pergunta específica
+      function loadQuestion(question) {
+        document
+          .querySelector("#pergunta-texto")
+          .setAttribute("value", question.descricao);
+
+        // Array com as alternativas
+        let alternativas = [
+          { id: 1, texto: question.verdadeiro, correta: true },
+          { id: 2, texto: question.falso_a, correta: false },
+          { id: 3, texto: question.falso_b, correta: false },
+          { id: 4, texto: question.falso_c, correta: false },
+        ];
+
+        // Embaralha as alternativas
+        alternativas = shuffleArray(alternativas);
+
+        // Atribui as alternativas embaralhadas aos elementos da cena
+        alternativas.forEach((alt, index) => {
+          const altId = index + 1;
+          document
+            .querySelector(`#alternativa-${altId}-texto`)
+            .setAttribute("value", alt.texto);
+          document
+            .querySelector(`#alternativa-${altId}-fundo`)
+            .setAttribute("data-correct", alt.correta);
+        });
+      }
+
+      // Função para avançar para a próxima pergunta
+      function nextQuestion() {
+        currentQuestionIndex++;
+        console.log(`Pontuação final: ${score} ponto(s)`); // Imprime a pontuação final no console
+        // Verifica se todas as perguntas foram respondidas
+        if (
+          currentQuestionIndex < shuffledQuestions.length &&
+          currentQuestionIndex < maxQuestions + 1
+        ) {
+          loadQuestion(shuffledQuestions[currentQuestionIndex]);
+          console.log(`Índice da pergunta atual: ${currentQuestionIndex}`);
+          timeLeft = 30;
+          startCountdown();
+        } else {
+          clearInterval(countdown);
+          document
+            .querySelector(`#text-dezena-second`)
+            .setAttribute("value", "");
+          document
+            .querySelector(`#text-unidade-second`)
+            .setAttribute("value", "");
+          console.log("Todas as perguntas foram respondidas.");
+          enviarDadosAoBanco(nick, score); // Enviar dados ao banco
+
+          for (let i = 1; i <= 4; i++) {
+            document
+              .querySelector(`#alternativa-${i}-texto`)
+              .setAttribute("value", "");
+          };
+          
+          // Primeira mensagem: FIM
+          document
+            .querySelector(`#pergunta-texto`)
+            .setAttribute("value", "FIM");
+
+          setTimeout(() => {
+            console.log("Mudando para SUA PONTUACAO");
+            // Segunda mensagem: SUA PONTUACAO
+            document
+              .querySelector(`#pergunta-texto`)
+              .setAttribute("value", `SUA PONTUACAO: ${score}`);
+
+            setTimeout(() => {
+              console.log("Mudando para Informe seu NICK");
+              // Terceira mensagem: Informe seu NICK
+              document
+                .querySelector(`#pergunta-texto`)
+                .setAttribute("value", "Clique em CONFIRMAR para iniciar");
+
+              // Após as mensagens, resetar e reiniciar o jogo
+              score = 0;
+              isFirstQuestion = true;
+              document
+                .querySelector("#valor-pontuacao")
+                .setAttribute("value", 0);
+              document
+                .querySelector("#plane-container")
+                .setAttribute("visible", "false");
+              document
+                .querySelector("#plane-contador")
+                .setAttribute("visible", "false");
+              document
+                .querySelector(`#text-first-letter`)
+                .setAttribute("value", "A");
+              document
+                .querySelector(`#text-second-letter`)
+                .setAttribute("value", "A");
+              document
+                .querySelector(`#text-third-letter`)
+                .setAttribute("value", "A");
+              document
+                .querySelector(`#text-fourth-letter`)
+                .setAttribute("value", "A");
+
+              // Reseta as alternativas
+              for (let i = 1; i <= 4; i++) {
+                document
+                  .querySelector(`#alternativa-${i}-borda`)
+                  .setAttribute("color", "#f850fe");
+                document
+                  .querySelector(`#alternativa-${i}-fundo`)
+                  .setAttribute("color", "#2c1996");
+              }
+
+              // Carregar novamente as perguntas
+              loadQuestions();
+            }, 3000); // Tempo para exibir "Informe seu NICK"
+          }, 3000); // Tempo para exibir "SUA PONTUACAO"
+        }
+      }
+
+      // Função para embaralhar um array
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      // // Carregar as perguntas quando a página for carregada
+      // window.onload = loadQuestions;
+
+      function selectAlternative(id) {
+        if (selectedAlternative !== null) {
+          resetAlternative(selectedAlternative);
+        }
+        selectedAlternative = id;
+        document
+          .querySelector(`#alternativa-${id}-fundo`)
+          .setAttribute("color", "#e27300");
+        document
+          .querySelector(`#alternativa-${id}-borda`)
+          .setAttribute("color", "#fcdb5a");
+      }
+
+      function resetAlternative(id) {
+        document
+          .querySelector(`#alternativa-${id}-fundo`)
+          .setAttribute("color", "#2c1996");
+        document
+          .querySelector(`#alternativa-${id}-borda`)
+          .setAttribute("color", "#f850fe");
+      }
+      
+      let isConfirming = false;
+
+      function confirmSelection() {
+        if (isConfirming) return;
+
+        isConfirming = true;
+        
+        document.querySelector('#botao-confirmar').setAttribute('color', '#888888');
+        document.querySelector('#botao-confirmar').classList.remove('clickable');
+        
+        if (isFirstQuestion) {
+          // Captura o nick
+          nick = ""; // Resetar antes de capturar
+          letters.forEach((position) => {
+            const letterElement = document.querySelector(
+              `#text-${position}-letter`
+            );
+            if (letterElement) {
+              nick += letterElement.getAttribute("value");
+            }
+          });
+          console.log("Nick informado:", nick);
+
+          // Verifica se o nick já existe no banco de dados
+          verificarNick(nick)
+            .then((existe) => {
+              // if (existe) {
+                // console.log("já existe esse nick cadastrado");
+                // // Opcional: você pode adicionar feedback visual para o usuário aqui
+                // skyElement.setAttribute(
+                //   "src",
+                //   "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/background-fail.png?v=1728163830018"
+                // );
+                // document
+                //   .querySelector(`#pergunta-fundo`)
+                //   .setAttribute("color", "#760d0d");
+                // document
+                //   .querySelector(`#pergunta-borda`)
+                //   .setAttribute("color", "#d64242");
+                // document
+                //   .querySelector(`#pergunta-texto`)
+                //   .setAttribute("value", "Nick Ja Cadastrado!");
+                // setTimeout(() => {
+                //   skyElement.setAttribute(
+                //     "src",
+                //     "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/images%2Fbackground-default.jpg?v=1728144353737"
+                //   );
+                //   document
+                //     .querySelector(`#pergunta-borda`)
+                //     .setAttribute("color", "#f850fe");
+                //   document
+                //     .querySelector(`#pergunta-fundo`)
+                //     .setAttribute("color", "#2c1996");
+                //   document
+                //     .querySelector(`#pergunta-texto`)
+                //     .setAttribute(
+                //       "value",
+                //       "Informe seu NICK e CONFIRME abaixo:"
+                //     );
+                // }, 3000); // Restaura a cor após 1 segundo
+              // } else {
+                // Oculta o container de nickname
+                document
+                  .querySelector("#plane-container")
+                  .setAttribute("visible", "false");
+                document
+                  .querySelector("#plane-contador")
+                  .setAttribute("visible", "true");
+                // Se preferir usar CSS, descomente a linha abaixo e comente a anterior
+                // document.querySelector('#plane-container').style.display = 'none';
+
+                // Define o texto "Prepare-se"
+                document
+                  .querySelector(`#pergunta-texto`)
+                  .setAttribute("value", "PREPARE-SE !");
+
+                // Adiciona um atraso de 3 segundos antes de avançar
+                setTimeout(() => {
+                  // Atualiza a flag
+                  isFirstQuestion = false;
+
+                  // Avança para a próxima pergunta
+                  nextQuestion();
+                }, 3000); // 3000ms = 3 segundos
+              // }
+            })
+            .catch((error) => {
+              console.error("Erro ao verificar o nick:", error);
+            });
+
+          // Oculta o container de nickname
+          // Para elementos A-Frame, utilize 'visible'
+          // document.querySelector('#plane-container').setAttribute('visible', 'false');
+          // Se preferir usar CSS, descomente a linha abaixo e comente a anterior
+          // document.querySelector('#plane-container').style.display = 'none';
+
+          // Atualiza a flag
+          // isFirstQuestion = false;
+
+          // Avança para a próxima pergunta
+          /// nextQuestion();
+        } else {
+          // Lógica existente para perguntas normais
+          if (selectedAlternative !== null) {
+            clearInterval(countdown);
+            const isCorrect =
+              document
+                .querySelector(`#alternativa-${selectedAlternative}-fundo`)
+                .getAttribute("data-correct") === "true";
+            const textoSelecionado = document
+              .querySelector(`#alternativa-${selectedAlternative}-texto`)
+              .getAttribute("value");
+            console.log(
+              `Alternativa ${selectedAlternative} selecionada: ${textoSelecionado}`
+            );
+
+            // Define a imagem temporária com base na resposta correta ou incorreta
+            const tempSrc = isCorrect
+              ? "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/background-sucess.png?v=1728163817400"
+              : "https://cdn.glitch.global/b8df8d91-5d1a-4ad3-8b6b-6c1e22a66138/background-fail.png?v=1728163830018";
+
+            // Altera a imagem do céu para a imagem temporária
+            skyElement.setAttribute("src", tempSrc);
+
+            // Reverte a imagem do céu para a original após 2 segundos
+            setTimeout(() => {
+              skyElement.setAttribute("src", originalSrc);
+              nextQuestion(); // Avança para a próxima pergunta após o tempo
+            }, 3000);
+
+            if (isCorrect) {
+              console.log("Acertou!");
+              score += 1; // Incrementa 1 ponto se a resposta estiver correta
+
+              // Atualiza o valor exibido no id="valor-pontuacao"
+              document
+                .querySelector("#valor-pontuacao")
+                .setAttribute("value", score);
+
+              document
+                .querySelector(`#pergunta-fundo`)
+                .setAttribute("color", "#053e05");
+              document
+                .querySelector(`#pergunta-borda`)
+                .setAttribute("color", "#38c335");
+              document
+                .querySelector(`#alternativa-${selectedAlternative}-borda`)
+                .setAttribute("color", "#ffffff");
+              document
+                .querySelector(`#alternativa-${selectedAlternative}-fundo`)
+                .setAttribute("color", "#38c335");
+              document
+                .querySelector(`#pergunta-texto`)
+                .setAttribute("value", "Certa Resposta !!");
+
+              // Exibe apenas a alternativa correta e a errada
+              for (let i = 1; i <= 4; i++) {
+                const alternativaCorreta =
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .getAttribute("data-correct") === "true";
+                if (!alternativaCorreta && i !== selectedAlternative) {
+                  document
+                    .querySelector(`#alternativa-${i}-texto`)
+                    .setAttribute("visible", "false");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("visible", "false");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("visible", "false");
+                }
+              }
+
+              setTimeout(() => {
+                document
+                  .querySelector(`#pergunta-borda`)
+                  .setAttribute("color", "#f850fe");
+                document
+                  .querySelector(`#pergunta-fundo`)
+                  .setAttribute("color", "#2c1996");
+                for (let i = 1; i <= 4; i++) {
+                  document
+                    .querySelector(`#alternativa-${i}-texto`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("color", "#f850fe");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("color", "#2c1996");
+                }
+                selectedAlternative = null;
+              }, 3000); // Restaura a cor após 1 segundo
+            } else {
+              console.log("Errou!");
+              document
+                .querySelector(`#alternativa-${selectedAlternative}-borda`)
+                .setAttribute("color", "#ffffff");
+              document
+                .querySelector(`#alternativa-${selectedAlternative}-fundo`)
+                .setAttribute("color", "#d64242");
+              document
+                .querySelector(`#pergunta-fundo`)
+                .setAttribute("color", "#760d0d");
+              document
+                .querySelector(`#pergunta-borda`)
+                .setAttribute("color", "#d64242");
+              document
+                .querySelector(`#pergunta-texto`)
+                .setAttribute("value", "Errou ! :(");
+
+              // Exibe alternativa correta e a errada
+              for (let i = 1; i <= 4; i++) {
+                const alternativaCorreta =
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .getAttribute("data-correct") === "true";
+
+                if (alternativaCorreta) {
+                  // Aplica a cor verde para a alternativa correta
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("color", "#ffffff");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("color", "#38c335");
+                }
+
+                if (!alternativaCorreta && i !== selectedAlternative) {
+                  // Limpa o texto das alternativas que não são a correta nem a errada
+                  document
+                    .querySelector(`#alternativa-${i}-texto`)
+                    .setAttribute("visible", "false");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("visible", "false");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("visible", "false");
+                }
+              }
+
+              setTimeout(() => {
+                document
+                  .querySelector(`#pergunta-borda`)
+                  .setAttribute("color", "#f850fe");
+                document
+                  .querySelector(`#pergunta-fundo`)
+                  .setAttribute("color", "#2c1996");
+                for (let i = 1; i <= 4; i++) {
+                  document
+                    .querySelector(`#alternativa-${i}-texto`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("visible", "true");
+                  document
+                    .querySelector(`#alternativa-${i}-borda`)
+                    .setAttribute("color", "#f850fe");
+                  document
+                    .querySelector(`#alternativa-${i}-fundo`)
+                    .setAttribute("color", "#2c1996");
+                }
+                selectedAlternative = null;
+              }, 3000); // Restaura a cor após 1 segundo
+            }
+            document
+              .querySelector(`#botao-confirmar`)
+              .setAttribute("color", "#00f301");
+          } else {
+            document
+              .querySelector(`#botao-confirmar`)
+              .setAttribute("color", "#e27300");
+          }
+        }
+        setTimeout(() => {
+          isConfirming = false;
+          document.querySelector('#botao-confirmar').setAttribute('color', '#04a804');
+          document.querySelector('#botao-confirmar').classList.add('clickable');
+        }, 3000);
+      }
+      
+      function changeColorOnHover() {
+        if (!isConfirming) {
+          if (selectedAlternative === null) {
+            document.querySelector('#botao-confirmar').setAttribute('color', '#e27300');
+          }
+        }
+      }
+
+      function resetColorOnLeave() {
+        if (!isConfirming) {
+          document.querySelector('#botao-confirmar').setAttribute('color', '#04a804');
+        }
+      }
+
+      function enviarDadosAoBanco(nick, pontuacao) {
+        const dados = {
+          nome: nick,
+          pontuacao: pontuacao,
+        };
+        
+        saveScores(pontuacao)
+
+        fetch("https://show-do-lisao.glitch.me/scores", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(dados),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Dados enviados com sucesso:", data);
+          })
+          .catch((error) => {
+            console.error("Erro ao enviar dados:", error);
+          });
+      }
+
+      function changeColorOnHover() {
+        if (selectedAlternative === null) {
+          document
+            .querySelector(`#botao-confirmar`)
+            .setAttribute("color", "#e27300");
+        }
+      }
+
+      function resetColorOnLeave() {
+        document
+          .querySelector(`#botao-confirmar`)
+          .setAttribute("color", "#04a804");
+      }
+
+      // Variables to hold the interval IDs for each triangle
+      let advanceIntervals = {};
+      let goBackIntervals = {};
+
+      // Function to add event listeners to the triangles after the scene is loaded
+      function addTriangleEventListeners() {
+        // List of letters and their positions
+
+        letters.forEach((position) => {
+          // Select the top and bottom triangles
+          const triangleTop = document.querySelector(
+            `#triangle-top-${position}-letter`
+          );
+          const triangleBottom = document.querySelector(
+            `#triangle-bottom-${position}-letter`
+          );
+
+          const letterId = `text-${position}-letter`;
+
+          // Add event listeners to go back a letter while in focus
+          triangleBottom.addEventListener("mouseenter", () => {
+            // Start interval to go back letters every second
+            goBackIntervals[letterId] = setInterval(() => {
+              goBackLetter(letterId);
+            }, 500); // 1000ms = 1 second
+          });
+
+          triangleBottom.addEventListener("mouseleave", () => {
+            // Stop interval
+            clearInterval(goBackIntervals[letterId]);
+            delete goBackIntervals[letterId];
+          });
+
+          // Add event listeners to advance a letter while in focus
+          triangleTop.addEventListener("mouseenter", () => {
+            // Start interval to advance letters every second
+            advanceIntervals[letterId] = setInterval(() => {
+              advanceLetter(letterId);
+            }, 500);
+          });
+
+          triangleTop.addEventListener("mouseleave", () => {
+            // Stop interval
+            clearInterval(advanceIntervals[letterId]);
+            delete advanceIntervals[letterId];
+          });
+        });
+      }
+
+      // Call the function after the scene is loaded
+      window.addEventListener("load", () => {
+        loadQuestions();
+        addTriangleEventListeners();
+      });
+
+      function advanceLetter(letterId) {
+        const letterElement = document.querySelector(`#${letterId}`);
+        if (letterElement) {
+          let currentLetter = letterElement.getAttribute("value");
+          let nextLetter =
+            currentLetter === "Z"
+              ? "A"
+              : String.fromCharCode(currentLetter.charCodeAt(0) + 1);
+          letterElement.setAttribute("value", nextLetter);
+        } else {
+          console.log("Elemento não encontrado:", letterId);
+        }
+      }
+
+      function goBackLetter(letterId) {
+        const letterElement = document.querySelector(`#${letterId}`);
+        if (letterElement) {
+          let currentLetter = letterElement.getAttribute("value");
+          let prevLetter =
+            currentLetter === "A"
+              ? "Z"
+              : String.fromCharCode(currentLetter.charCodeAt(0) - 1);
+          letterElement.setAttribute("value", prevLetter);
+        } else {
+          console.log("Elemento não encontrado:", letterId);
+        }
+      }
+
+      function verificarNick(nick) {
+        return fetch(
+          `https://show-do-lisao.glitch.me/scores?nome=${encodeURIComponent(
+            nick
+          )}`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            return data.length > 0; // Retorna true se existir, false caso contrário
+          })
+          .catch((error) => {
+            console.error("Erro na verificação do nick:", error);
+            throw error; // Repassa o erro para ser tratado na chamada
+          });
+      }
+    </script>
+  </body>
+  <!--   <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector/dist/aframe-inspector.min.js"></script> -->
+</html>
