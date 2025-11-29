@@ -200,7 +200,7 @@ function saveScores() {
     
       let scoreData = {
         userId: user[0].id,
-        experienceId: 1,
+        experienceId: 4,
         score: pontos
       };
     
