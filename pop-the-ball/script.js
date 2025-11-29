@@ -189,7 +189,7 @@ function saveScores() {
   let user = localStorage.getItem("userCode");
 
   fetch(
-    `https://base-presentation-vrar.onrender.com/users?code=${user}`
+    `https://base-presentation-vrar.onrender.com/users?${user}`
   )
     .then(async (res) => {
      return await res.json();
