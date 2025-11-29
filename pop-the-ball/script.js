@@ -189,7 +189,7 @@ function saveScores() {
   let user = localStorage.getItem("userCode");
 
   fetch(
-    `https://solid-palm-tree-6q6qqgw9grxcrv7x-3000.app.github.dev/users?code=${user}`
+    `https://base-presentation-vrar.onrender.com/users?code=${user}`
   )
     .then(async (res) => {
      return await res.json();
@@ -207,7 +207,7 @@ function saveScores() {
     console.log('score', scoreData)
 
       fetch(
-        `https://upgraded-happiness-9rvrr9w9ppj3v64-3000.app.github.dev/experienceScores`,
+        `https://base-presentation-vrar.onrender.com/experienceScores`,
         {
           method: "POST",
           headers: {
@@ -228,7 +228,7 @@ function saveScores() {
 
   setTimeout(() => {
     window.location.href =
-      "https://upgraded-happiness-9rvrr9w9ppj3v64-3000.app.github.dev/pages/auth";
+      "https://base-presentation-vrar.onrender.com/pages/auth";
   }, 10000)
 
 }
